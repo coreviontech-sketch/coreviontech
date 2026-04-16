@@ -1,0 +1,95 @@
+/* ROOT COLORS (ADD THIS ON TOP IF NOT PRESENT) */
+:root {
+  --main-color: #00e6ff;
+  --bg-color: #0f2027;
+  --snd-bg-color: rgba(255, 255, 255, 0.05);
+  --text-color: #ffffff;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 60px 10%;
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* HEADING */
+.contact h2 {
+  margin-bottom: 2rem;
+  font-size: 32px;
+}
+
+.contact h2 span {
+  color: var(--main-color);
+}
+
+/* FORM CONTAINER */
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: var(--snd-bg-color);
+  backdrop-filter: blur(10px);
+}
+
+/* INPUT ROW */
+.contact form .input-card {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* INPUTS + TEXTAREA */
+.contact form .input-card input,
+.contact form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  margin: 8px 0;
+  border: 1px solid transparent;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* PLACEHOLDER */
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #cccccc;
+}
+
+/* FOCUS EFFECT */
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid var(--main-color);
+  box-shadow: 0 0 8px var(--main-color);
+}
+
+/* BUTTON */
+.button {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #00e6ff, #0072ff);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00e6ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact form .input-card {
+    flex-direction: column;
+  }
+}

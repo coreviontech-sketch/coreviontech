@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Corevion</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+<style>
+body{
+background:#f5f7ff;
+}
+
+.registration{
+max-width:600px;
+margin:50px auto;
+padding:40px 20px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.registration h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.registration form{
+display:flex;
+flex-direction:column;
+}
+
+.registration label{
+margin-top:15px;
+font-weight:500;
+}
+
+.registration input,
+.registration select,
+.registration textarea{
+padding:12px;
+margin-top:6px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.registration textarea{
+resize:vertical;
+min-height:90px;
+}
+
+.registration button{
+margin-top:25px;
+padding:14px;
+border:none;
+background:#4a6cf7;
+color:white;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.registration button:hover{
+background:#324bd6;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="registration">
+
+<h2>📋 Corevion Candidate Registration</h2>
+
+<form>
+
+<label>First Name *</label>
+<input type="text" required>
+
+<label>Last Name *</label>
+<input type="text" required>
+
+<label>Email Address *</label>
+<input type="email" required>
+
+<label>Current City and State *</label>
+<input type="text" placeholder="Example: Bangalore, Karnataka">
+
+<label>Highest Education Qualification *</label>
+
+<select required>
+<option value="">Select Qualification</option>
+<option>B.E / B.Tech</option>
+<option>BCA</option>
+<option>MCA</option>
+<option>B.Com</option>
+<option>BSc</option>
+<option>MSc</option>
+<option>MBA</option>
+<option>Other</option>
+</select>
+
+<label>College / University Name *</label>
+<input type="text">
+
+<label>Year Of Graduation *</label>
+<input type="number">
+
+<label>Current Job Role *</label>
+<input type="text">
+
+<label>Skills *</label>
+<textarea required></textarea>
+
+<label>LinkedIn *</label>
+<input type="url" placeholder="https://linkedin.com/in/yourprofile">
+
+<label>Upload Resume *</label>
+<input type="file" accept=".pdf,.doc,.docx">
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</section>
+
+</body>
+</html>

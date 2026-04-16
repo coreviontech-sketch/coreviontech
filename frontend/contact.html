@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - CorevionTech</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ FIXED CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+
+<body>
+
+<section class="contact" id="contact">
+
+  <h2 class="heading">Contact <span>Us</span></h2>
+
+  <!-- ✅ FIXED FORM -->
+  <form action="/send" method="POST">
+
+    <div class="input-card">
+      <input type="text" name="name" placeholder="Enter Your Name" required>
+      <input type="email" name="email" placeholder="Enter Your Email" required>
+    </div>
+
+    <div class="input-card">
+      <input type="tel" name="number" placeholder="Enter Your Mobile Number" required>
+      <input type="text" name="Location" placeholder="Enter your Location" required>
+      <input type="text" name="subject" placeholder="Enter Subject" required>
+      
+    </div>
+
+    <textarea name="message" rows="6" placeholder="Enter Your Message..." required></textarea>
+
+    <button type="submit" class="button">Send Message</button>
+
+  </form>
+
+</section>
+
+</body>
+</html>
